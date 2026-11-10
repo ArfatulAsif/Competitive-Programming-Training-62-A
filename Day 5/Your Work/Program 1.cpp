@@ -10,7 +10,7 @@ int main() {
         cin >> a[i];
     }
 
-    // Assuming the array is already sorted. If not, sort(a.begin(), a.end());
+    
     int left = 0, right = n - 1;
     bool found = false;
 
@@ -23,10 +23,10 @@ int main() {
             break;
         }
         else if(current_sum < target) {
-            left++; // We need a larger sum, move left pointer right
+            left++; 
         }
         else {
-            right--; // We need a smaller sum, move right pointer left
+            right--; 
         }
     }
 
